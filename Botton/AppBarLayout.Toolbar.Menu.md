@@ -6,6 +6,7 @@ Main
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
   android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+  app:layout_constraintTop_toTopOf="parent"
 >
   <androidx.appcompat.widget.Toolbar
     android:id="@+id/toolbar"
