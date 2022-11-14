@@ -5,22 +5,22 @@ Main
 <com.google.android.material.appbar.AppBarLayout
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  android:theme="@style/Theme.AppBarOverlay"
+  android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
 >
   <androidx.appcompat.widget.Toolbar
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     android:background="?attr/colorPrimary"
-    app:popupTheme="@style/Theme.PopupOverlay"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
   />
 </com.google.android.material.appbar.AppBarLayout>
 ```
-add in `res/value/styles.xml` `<resources></resources>`
+<!-- add in `res/value/styles.xml` `<resources></resources>`
 ```XML
 <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
-```
+``` -->
 ## Java
 <!-- `import`
 ```Java
