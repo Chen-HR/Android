@@ -16,8 +16,5 @@ Toast toast = Toast.makeText(MainActivity.this, "Testing Toast", Toast.LENGTH_LO
 toast.show();
 ```
 ```java
-((Toast) Toast.makeText(MainActivity.this, "Testing Toast", Toast.LENGTH_LONG)).show();
-```
-```java
 Toast.makeText(MainActivity.this, "Testing Toast", Toast.LENGTH_LONG).show();
 ```
