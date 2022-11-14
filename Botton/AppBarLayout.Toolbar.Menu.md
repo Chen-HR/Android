@@ -5,14 +5,14 @@ Main
 <com.google.android.material.appbar.AppBarLayout
   android:layout_width="match_parent"
   android:layout_height="wrap_content"
-  android:theme="@style/Theme.Ch08_test.AppBarOverlay"
+  android:theme="@style/Theme.{@string/app_name}.AppBarOverlay"
 >
   <androidx.appcompat.widget.Toolbar
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="?attr/actionBarSize"
     android:background="?attr/colorPrimary"
-    app:popupTheme="@style/Theme.Ch08_test.PopupOverlay"
+    app:popupTheme="@style/Theme.{@string/app_name}.PopupOverlay"
   />
 </com.google.android.material.appbar.AppBarLayout>
 ```
