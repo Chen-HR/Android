@@ -17,10 +17,10 @@ Main
 </com.google.android.material.appbar.AppBarLayout>
 ```
 ## Java
-`import`
+<!-- `import`
 ```Java
 import androidx.appcompat.app.AppCompatActivity;
-```
+``` -->
 Declear
 ```java
 public class MainActivity extends AppCompatActivity 
@@ -30,15 +30,15 @@ public class MainActivity extends AppCompatActivity
     @Override public boolean onOptionsItemSelected(MenuItem item) {}
   }
 ```
-Link
+<!-- Link
 ```java
-```
-in `onCreate()`
+``` -->
+set in `onCreate()`
 ```java
 setContentView(R.layout.activity_main);
 setSupportActionBar(findViewById(R.id.toolbar));
 ```
-using in `onCreateOptionsMenu()`
+`onCreateOptionsMenu()`
 ```java
 @Override public boolean onCreateOptionsMenu(Menu menu) 
   {
@@ -47,7 +47,7 @@ using in `onCreateOptionsMenu()`
     return true;
   }
 ```
-using in `setOnClickListener`
+`setOnClickListener`
 ```java
 @Override public boolean onOptionsItemSelected(MenuItem item) 
   {
