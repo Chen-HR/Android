@@ -22,12 +22,27 @@ Main
 <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 ``` -->
+
+add in `res/value/themes.xml` `<resources><style></style></resources>`
+```XML
+<item name="windowActionBar">false</item>
+<item name="windowNoTitle">true</item>
+```
+for ERROR
+```log
+E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: ${PackageName}, PID: 22921
+    java.lang.RuntimeException: Unable to start activity ComponentInfo{${PackageName}/${PackageName}.MainActivity}:  
+        java.lang.IllegalStateException: This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_SUPPORT_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.
+    Caused by: 
+        java.lang.IllegalStateException: This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_SUPPORT_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.
+```
 ## Java
 <!-- `import`
 ```Java
 import androidx.appcompat.app.AppCompatActivity;
 ``` -->
-Declear
+<!-- Declear
 ```java
 public class MainActivity extends AppCompatActivity 
   {
@@ -35,7 +50,7 @@ public class MainActivity extends AppCompatActivity
     @Override public boolean onCreateOptionsMenu(Menu menu) {}
     @Override public boolean onOptionsItemSelected(MenuItem item) {}
   }
-```
+``` -->
 <!-- Link
 ```java
 ``` -->
