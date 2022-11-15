@@ -22,11 +22,31 @@ Main
 <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 ``` -->
-
+---
 add in `res/value/themes.xml` `<resources><style></style></resources>`
 ```XML
 <item name="windowActionBar">false</item>
 <item name="windowNoTitle">true</item>
+```
+for ERROR
+```log
+E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: ${PackageName}, PID: 22921
+    java.lang.RuntimeException: Unable to start activity ComponentInfo{${PackageName}/${PackageName}.MainActivity}:  
+        java.lang.IllegalStateException: This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_SUPPORT_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.
+    Caused by: 
+        java.lang.IllegalStateException: This Activity already has an action bar supplied by the window decor. Do not request Window.FEATURE_SUPPORT_ACTION_BAR and set windowActionBar to false in your theme to use a Toolbar instead.
+```
+add in `res/value/themes.xml` `<resources></resources>`
+```XML
+  <style name="Theme.${app_name}.NoActionBar">
+    <item name="windowActionBar">false</item>
+    <item name="windowNoTitle">true</item>
+  </style>
+```
+add in `manifests/AndroidManifest.xml` `<manifest><application><activity></activity></application></manifest>` Attributes
+```XML
+android:theme="@style/Theme.${app_name}.NoActionBar"
 ```
 for ERROR
 ```log
