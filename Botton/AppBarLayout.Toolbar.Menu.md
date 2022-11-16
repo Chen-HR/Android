@@ -23,6 +23,8 @@ Main
 <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 ``` -->
 ---
+> refer: https://stackoverflow.com/questions/41586347/do-not-request-window-feature-support-action-bar
+
 add in `res/value/themes.xml` `<resources><style></style></resources>`
 ```XML
 <item name="windowActionBar">false</item>
